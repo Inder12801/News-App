@@ -14,8 +14,11 @@ const App = () => {
     alanBtn({
       key: ALAN_KEY,
       onCommand: ({ command, articles }) => {
+        console.log(articles);
         if (command === "newHeadlines") {
+          console.log(articles);
           setNewsArticles(articles);
+          console.log("These are news articles" + newsArticles);
         }
       },
     });
